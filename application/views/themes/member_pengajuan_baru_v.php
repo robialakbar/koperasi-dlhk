@@ -204,7 +204,7 @@
 	}
 
 
-	div class="container">
+	<div class="container">
 
 	<?php $this->load->view('themes/member_menu_v'); ?>
 
