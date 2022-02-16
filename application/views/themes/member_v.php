@@ -136,8 +136,8 @@
 
 						'.$isi.'
 
-						<h3>Saldo Simpanan</h3>
-						<table class="table table-responsive">
+						<h3>Dana Tersedia Koperasi</h3>
+						<table class="table table-responsive" style="red">
 						';
 
 						$simpanan_arr = array();
