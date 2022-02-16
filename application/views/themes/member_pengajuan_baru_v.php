@@ -204,6 +204,63 @@
 	}
 
 
+	div class="container">
+
+	<?php $this->load->view('themes/member_menu_v'); ?>
+
+	<div class="row">
+		<div class="box box-primary">
+			<div class="box-body" style="min-height: 500px;">
+				<div>
+					<p style="text-align:center; font-size: 15pt; font-weight: bold;"> Laporan Pembayaran </p>
+				</div>
+				
+
+				<table 
+					id="tablegrid"
+					data-toggle="table"
+					data-id-field="id"
+					data-url="<?php echo site_url('member/ajax_lap_bayar'); ?>" 
+					data-sort-name="tgl_bayar"
+					data-sort-order="desc"
+					data-pagination="true"
+					data-toolbar=""
+					data-side-pagination="server"
+					data-page-list="[5, 10, 25, 50, 100]"
+					data-page-size="10"
+					data-smart-display="false"
+					data-select-item-name="tbl_terpilih"
+					data-striped="true"
+					data-search="false"
+					data-show-refresh="true"
+					data-show-columns="true"
+					data-show-toggle="true"
+					data-method="post"
+					data-content-type="application/x-www-form-urlencoded"
+					data-cache="false" >
+					<thead>
+						<tr>
+							<th data-field="id" data-switchable="false" data-visible="false">ID</th>
+							<th data-field="tgl_bayar" data-sortable="false" data-valign="middle" data-align="center" data-halign="center">Tanggal</th>
+							<th data-field="ket_bayar" data-sortable="false" data-valign="middle" data-align="center" data-halign="center">Jenis</th>
+							<th data-field="angsuran_ke" data-sortable="false" data-valign="middle" data-align="center" data-halign="center">Angsuran Ke</th>
+							<th data-field="denda_rp" data-sortable="false" data-valign="middle" data-align="right" data-halign="center">Denda</th>
+							<th data-field="jumlah_bayar" data-sortable="false" data-valign="middle" data-align="right" data-halign="center">Jumlah Bayar</th>
+							<th data-field="keterangan" data-sortable="false" data-align="left" data-halign="center" data-valign="middle">Keterangan</th>
+						</tr>
+					</thead>
+				</table>
+
+				<?php
+					//var_dump($data_simpanan);
+				?>
+
+			</div><!--box-p -->
+		</div><!--box-body -->
+	</div><!--row -->
+</div>
+
+
 
 </script>
 
