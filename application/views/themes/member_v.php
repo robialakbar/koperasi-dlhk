@@ -136,38 +136,7 @@
 
 						'.$isi.'
 
-						<h3>Dana Tersedia Koperasi</h3>
-						<table class="table table-responsive" style="red">
-						';
-
-						$simpanan_arr = array();
-						$simpanan_row_total = 0; 
-						$simpanan_total = 0; 
-						foreach ($data_jns_simpanan as $jenis) {
-							$simpanan_arr[$jenis->id] = $jenis->jns_simpan;
-							$nilai_s = $this->lap_kas_anggota_m->get_jml_simpanan($jenis->id, $user_id);
-							$nilai_p = $this->lap_kas_anggota_m->get_jml_penarikan($jenis->id, $user_id);
-							
-							$simpanan_row=$nilai_s->jml_total - $nilai_p->jml_total;
-							$simpanan_row_total += $simpanan_row;
-							$simpanan_total += $simpanan_row_total;
-
-
-							echo'
-									<tr>
-										<td style="width:150px;">'.$jenis->jns_simpan.'</td>
-										<td style="width:150px;" class="h_kanan">'. number_format($simpanan_row).'</td>
-										<td> </td>
-									</tr>';
-							}
-							echo '<tr>
-										<td><strong> Jumlah Simpanan </strong></td>
-										<td class="h_kanan"><strong> '.number_format($simpanan_row_total).'</strong></td>
-										<td> </td>
-									</tr>
-									</table>';
-							echo '		
-							<br>
+						
 
 							<h3>Saldo Simpanan</h3>
 							<table class="table table-responsive">
