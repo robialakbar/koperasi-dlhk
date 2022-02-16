@@ -1,0 +1,5 @@
+1. Total Kas Simpanan s.d hari ini/terakhir + Tombol cetak
+2. Total Kas Pinjaman s.d hari ini/terakhir + Tombol Cetak
+3. Sisa Kas Koperasi dari Pengurangan Total Kas Simpanan - Total Kas Pinjaman + cetak
+4. Detail Anggota yang Meminjam 
+5. Detail Kas Simpanan Anggota
